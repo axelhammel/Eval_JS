@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Jarditou</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        
+                    <header>
+                    <img src="assets\img\jarditou_logo.jpg" id="image">
+                    <p id="alaligne">Tout le jardin</p>
+                    </header>
+                    <nav id="navbar"class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <!--Toggler-->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#" title="Acceuil">Acceuil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="exo6.html" title="tableau">Tableau</a></li>
+                        <li class="nav-item"><a class="nav-link" href="formulaire.html" title="Contact">Formulaire</a></li>
+                    </ul>
+                    </div>
+                    </nav>
+                    <br>
+                    <img src="assets\img\promotion.jpg" class="img-fluid" id="promo">
+                <div class="row">
+                    <p class="h5 my-3 mx-3">* Ces zones sont obligatoires</p>
+                </div>
+                <form action="http://bienvu.net/script.php" action="GET" class="col-lg-4">
+                    <fieldset class="mb-3 p-3 row">
+                        <legend class="">Vos Coordonnées</legend>
+                        <label for="nom">Votre nom:</label>
+                        <input type="text" class="form-control" id="nom" name="nom" required>
+                        <span id="namespan"></span>
+                        <label for="prenom">Votre prénom:</label>
+                        <input type="text" class="form-control" id="prenom" name="prenom" required >
+                        <span id="prspan"></span>
+                        <label for="sexe">Sexe:</label>
+                        <div id="sexe" class="mb-2">
+                            <!-- Au sujet de l'usage de la propriété required avec les radio
+                            voir https://stackoverflow.com/questions/8287779/how-to-use-the-required-attribute-with-a-radio-input-field#8287947 -->
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="Fem" name="sexe" value="F" required>
+                                <label class="form-check-label" for="Fem">Féminin</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="Mas" name="sexe" value="M" required >
+                                <label class="form-check-label" for="Mas">Masculin</label>
+                            </div>
+                        </div>
+                        <label for="naiss">Date de Naissance*:</label>
+                        <input type="date" class="form-control" id="naiss">
+                        <span id="bd"></span>
+                        <label for="cp">Code Postal:</label>
+                        <input type="text" class="form-control" id="cp" >
+                        <span id="codepost"></span>  
+                        <label for="addr">Adresse:</label>
+                        <input type="text" class="form-control" id="adr">
+                        <span id="adr"></span>
+                        <label for="mail">Email*:</label>
+                        <input type="email" class="form-control" id="mail"  placeholder="afpa@afpa.fr">
+                        <span id="missmail"></span>
+                    </fieldset>
+                    <fieldset class="mb-3 p-3 row">
+                        <legend>Votre demande</legend>
+                        <label for="suj">Sujet*:</label>
+                        <select name="sujet" class="form-control" id="suj" >
+                            <option>Mes commandes</option>
+                            <option>Question sur un produit</option>
+                            <option>Réclamation</option>
+                            <option>Autres</option>
+                        </select>
+                        <label for="question">Votre question*:</label>
+                        <textarea class="form-control" required id="quest" name="question" ></textarea>
+                    </fieldset>
+                    <div class="row my-3">
+                        <div class="form-check">
+                                <input required type="checkbox" name="accord" id="accord" class="form-check-input">
+                                <label for="accord" class="form-check-label">J'accepte le traitement informatique de ce formulaire</label>
+                        </div>
+                        <button type="submit" class="btn btn-secondary" id="validform">Envoyer</button>
+                        
+                        <button type="reset" class="btn btn-secondary">Annuler</button>
+                    </div>
+                </form>               
+                <footer>
+                        <ul>
+                        <li><a href="index.html" title="Mentions légales">Mentions légales</a></li>
+                        <li><a href="index.html" title="Horaires">Horaires</a></li>
+                        <li><a href="index.html" title="Plan du site">Plan du site</a></li>
+                    </ul>
+                    </footer>
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+                    <script src="assets/js/formulaire_eval.js"></script>
+                </body>
+           
+        </html>
+              
